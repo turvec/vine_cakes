@@ -78,7 +78,12 @@
 						</div>
 						<ul class="cart">
 							<li>
-								<a aria-expanded="true" aria-haspopup="true" data-toggle="dropdown" id="cart" class="btn dropdown-toggle" title="Order Online" href="#">Order Online</a>
+								<a aria-expanded="true" aria-haspopup="true" data-toggle="dropdown" id="cart" class="btn dropdown-toggle" title="Order Online" >PRO</a>
+                                <i class="ddl-switch fa fa-angle-down"></i>
+								<ul class="dropdown-menu">
+									<li><a href="{{route('login')}}" title="Portfolio grid">Log In</a></li>
+                                    <li><a href="{{route('register')}}" title="Portfolio grid">Register</a></li>
+								</ul>
 							</li>
 						</ul>
 					</div>
