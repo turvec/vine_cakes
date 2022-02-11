@@ -67,18 +67,10 @@
 						<a class="navbar-brand" href="index-2.html" title="Logo"><h3>Royal <img src="images/logo.png" alt="logo"/> Bakers</h3></a>
 					</div>
 					<div class="add-to-cart">
-						<div class="menu-search">
-							<div id="sb-search" class="sb-search">
-								<form>
-									<input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search" />
-									<button class="sb-search-submit"><i class="fa fa-search"></i></button>
-									<span class="sb-icon-search"></span>
-								</form>
-							</div>
-						</div>
-						<ul class="cart">
-							<li>
-								<a aria-expanded="true" aria-haspopup="true" data-toggle="dropdown" id="cart" class="btn dropdown-toggle" title="Order Online" >PRO</a>
+                        @guest
+                        <ul class="nav navbar-nav">
+							<li class="dropdown">
+								<a aria-expanded="false" aria-haspopup="true" role="button"  class="btn dropdown-toggle" title="Pro" >PRO</a>
                                 <i class="ddl-switch fa fa-angle-down"></i>
 								<ul class="dropdown-menu">
 									<li><a href="{{route('login')}}" title="Portfolio grid">Log In</a></li>
@@ -86,6 +78,19 @@
 								</ul>
 							</li>
 						</ul>
+                        @endguest
+                        @auth
+                        <ul class="cart">
+							<li >
+								<a aria-expanded="true" aria-haspopup="true" data-toggle="dropdown" class="btn dropdown-toggle" title="Log Out" href="{{route('logout')}}"
+                                onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">Log Out</a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
+							</li>
+						</ul>
+                        @endauth
 					</div>
 					<div id="navbar" class="navbar-collapse collapse navbar-right">
 						<ul class="nav navbar-nav">

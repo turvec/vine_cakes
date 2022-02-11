@@ -29,7 +29,7 @@ Route::middleware(['auth'])->get('/dashboard', function () {
     if ($usertype == 'admin') {
         return view('admin.dashboard',compact('users'));
     } else {
-        return redirect()->route('welcome');
+        return back('welcome');
     }
 })->name('dashboard');
 

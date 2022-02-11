@@ -11,8 +11,8 @@
                     <span class="nav-text">Experience</span>
                 </a>
                 <ul aria-expanded="false">
-                    <li><a href="{{route()}}">Add</a></li>
-                    <li><a href="{{route()}}">View All</a></li>
+                    <li><a href="">Add</a></li>
+                    <li><a href="">View All</a></li>
                 </ul>
             </li>
         </ul>
