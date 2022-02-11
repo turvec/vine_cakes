@@ -15,6 +15,8 @@ class CreateStoriesTable extends Migration
     {
         Schema::create('stories', function (Blueprint $table) {
             $table->id();
+            $table->string('age')->nullable();
+            $table->string('story')->nullable();
             $table->timestamps();
         });
     }

@@ -48,7 +48,11 @@ Route::get('/blog-post', 'HomeController@singleBlog')->name('single-blog');
 
 // Admin area
 
+Route::get('/add-story', 'StoryController@addStory')->name('add_story');
 
+Route::get('/upload-story', 'StoryController@uploadStory')->name('upload_story');
+
+Route::get('/all-story', 'StoryController@allStory')->name('all_story');
 
 
 

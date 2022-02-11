@@ -26,13 +26,13 @@
                     </div>
                     <div class="card-body">
                         <div class="basic-form">
-                        <form action="{{route('upload-story')}}" method="POST" enctype="multipart/form-data">
+                        <form action="{{route('upload_story')}}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 <div class="input-group mb-4 input-primary">
                                     <div class="input-group-append">
                                         <span class="input-group-text">Number of Years</span>
                                     </div>
-                                    <input name="age" type="text" class="form-control" placeholder="Age of Vine Cakes Company">
+                                    <input name="age" type="text" class="form-control" placeholder=" Vine Cakes Company Years of Existence">
 
                                 </div>
                                 <div class="input-group mb-4 input-primary">

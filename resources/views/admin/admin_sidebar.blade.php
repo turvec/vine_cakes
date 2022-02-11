@@ -11,7 +11,7 @@
                     <span class="nav-text">About</span>
                 </a>
                 <ul aria-expanded="false">
-                    <li><a href="">Add Story & Experience</a></li>
+                    <li><a href="{{route('add_story')}}">Add Story & Experience</a></li>
                     <li><a href="">View all</a></li>
                 </ul>
             </li>
