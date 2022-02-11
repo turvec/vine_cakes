@@ -7,42 +7,31 @@
     </div>
 </div><!-- Page Banner /- -->
 
-<!-- Welcome Section 1 -->
-<div class="welcome-section-1 container-fluid no-padding">
+<!-- Welcome Section -->
+<div class="welcome-section container-fluid no-padding">
     <div class="section-padding"></div>
     <div class="container">
-        <div class="section-header">
-            <h3>Welcome To Cake</h3>
-            <h5>Our Story</h5>
-            <img src="images/section-seprator.png" alt="section-seprator" width="169" height="15">
-            <p>The day for a three hour tour a three hour tour then one day he was shooting at some food and up through the ground came a oil that is its a beautiful day.</p>
-        </div><!-- Section Header /-  -->
-        <div class="col-md-7 col-sm-7 col-xs-6 wc-img-box">
-            <img src="images/welcome-1.png" alt="welcome" width="754" height="502" />
-        </div>
-
-        <div class="col-md-5 col-sm-5 col-xs-6">
-            <div class="mission-content">
-                <img src="images/welcome-ic-1.png" alt="welcome-ic" width="71" height="71">
-                <h3>Our Mission</h3>
-                <p>The day for a three hour tour a three hour tour then one day he was shooting.</p>
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <img src="images/welcome.png" alt="welcome" width="457" height="700" />
             </div>
-
-            <div class="mission-content">
-                <img src="images/welcome-ic-2.png" alt="welcome-ic" width="71" height="71">
-                <h3>Our vision</h3>
-                <p>The day for a three hour tour a three hour tour then one day he was shooting.</p>
-            </div>
-
-            <div class="mission-content">
-                <img src="images/welcome-ic-3.png" alt="welcome-ic" width="71" height="71">
-                <h3>What We do</h3>
-                <p>The day for a three hour tour a three hour tour then one day he was shooting.</p>
+            <div class="col-md-6 col-sm-6 col-xs-6 wc-content-box">
+                <div class="welcome-header">
+                    <span>30</span><h5>Years</h5> <h5>Of Excellence</h5>
+                </div>
+                <div class="welcome-content">
+                    <div class="section-header left-header">
+                        <h3>About Us</h3>
+                        <h5>Our story</h5>
+                        <img src="images/section-seprator-1.png" alt="section-seprator" width="70" height="3">
+                        <p>The day for a three hour tour a three hour tour then one day he was shooting at some food and up through the ground came a oil that is its a beautiful day Got a dream and we just know now we are gonna make our dream come true so get a witch is shawl on a broomstick you can crawl on were gonna pay.</p>
+                    </div><!-- Section Header /-  -->
+                </div>
             </div>
         </div>
     </div><!-- Container /- -->
-    <div class="section-padding"></div>
-</div><!-- Welcome Section 1 /- -->
+</div><!-- Welcome Section /- -->
+
 
 <!-- Team Section -->
 <div class="team-section container-fluid no-padding">

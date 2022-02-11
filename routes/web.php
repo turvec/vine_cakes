@@ -46,3 +46,10 @@ Route::get('/blog', 'HomeController@blog')->name('blog');
 Route::get('/blog-post', 'HomeController@singleBlog')->name('single-blog');
 
 
+// Admin area
+
+
+
+
+
+

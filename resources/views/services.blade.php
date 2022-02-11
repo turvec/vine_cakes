@@ -7,74 +7,57 @@
     </div>
 </div><!-- Page Banner /- -->
 
-<!-- Welcome Section -->
-<div class="welcome-section container-fluid no-padding">
-    <div class="section-padding"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-sm-6 col-xs-6">
-                <img src="images/welcome.png" alt="welcome" width="457" height="700" />
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-6 wc-content-box">
-                <div class="welcome-header">
-                    <span>30</span><h5>Years</h5> <h5>Of Excellence</h5>
-                </div>
-                <div class="welcome-content">
-                    <div class="section-header left-header">
-                        <h3>About Us</h3>
-                        <h5>Our story</h5>
-                        <img src="images/section-seprator-1.png" alt="section-seprator" width="70" height="3">
-                        <p>The day for a three hour tour a three hour tour then one day he was shooting at some food and up through the ground came a oil that is its a beautiful day Got a dream and we just know now we are gonna make our dream come true so get a witch is shawl on a broomstick you can crawl on were gonna pay.</p>
-                        <a href="#" title="Read More" class="read-more">Read More</a>
-                    </div><!-- Section Header /-  -->
-                </div>
-            </div>
-        </div>
-    </div><!-- Container /- -->
-</div><!-- Welcome Section /- -->
-
-<!-- Order Section 1 -->
-<div class="order-section order-section-1 container-fluid no-padding">
+<!-- Welcome Section 1 -->
+<div class="welcome-section-1 container-fluid no-padding">
     <div class="section-padding"></div>
     <div class="container">
         <div class="section-header">
-            <h3>Choose your Flavour</h3>
-            <h5>Order Online</h5>
+            <h3>Welcome To Cake</h3>
+            <h5>Our Story</h5>
             <img src="images/section-seprator.png" alt="section-seprator" width="169" height="15">
             <p>The day for a three hour tour a three hour tour then one day he was shooting at some food and up through the ground came a oil that is its a beautiful day.</p>
         </div><!-- Section Header /-  -->
+        <div class="col-md-7 col-sm-7 col-xs-6 wc-img-box">
+            <img src="images/welcome-1.png" alt="welcome" width="754" height="502" />
+        </div>
 
-        <form>
-        <div class="col-md-4 col-sm-4 col-xs-4">
-            <input type="text" class="form-control" placeholder="Name *" required />
+        <div class="col-md-5 col-sm-5 col-xs-6">
+            <div class="mission-content">
+                <img src="images/welcome-ic-1.png" alt="welcome-ic" width="71" height="71">
+                <h3>Our Mission</h3>
+                <p>The day for a three hour tour a three hour tour then one day he was shooting.</p>
+            </div>
+
+            <div class="mission-content">
+                <img src="images/welcome-ic-2.png" alt="welcome-ic" width="71" height="71">
+                <h3>Our vision</h3>
+                <p>The day for a three hour tour a three hour tour then one day he was shooting.</p>
+            </div>
+
+            <div class="mission-content">
+                <img src="images/welcome-ic-3.png" alt="welcome-ic" width="71" height="71">
+                <h3>What We do</h3>
+                <p>The day for a three hour tour a three hour tour then one day he was shooting.</p>
+            </div>
         </div>
-        <div class="col-md-4 col-sm-4 col-xs-4">
-            <input type="text" class="form-control" placeholder="Phone Number *" required />
-        </div>
-        <div class="form-group col-md-4 col-sm-4 col-xs-4">
-            <select>
-                <option>FLAVOURS</option>
-                <option>FLAVOURS</option>
-                <option>FLAVOURS</option>
-                <option>FLAVOURS</option>
-            </select>
-        </div>
-        <div class="col-md-12 col-sm-12 col-xs-12">
-            <textarea class="form-control" rows="4" placeholder="Your Address *"></textarea>
-        </div>
-        <div class="col-md-12 col-sm-12 col-xs-12 order-links">
-            <a href="#" title="Order Now" class="order-now">Order Now</a>
-            <a href="#" title="Free Delivery" class="free-delivery">Free Delivery</a>
-        </div>
-        <div class="working-hours">
-            <p><span>working hours:</span> monday to friday : 8.30AM - 10.30PM</p>
-            <p>saturday : 9.00AM - 10.30PM</p>
-            <p>sunday : <span>closed</span></p>
-        </div>
-    </form>
     </div><!-- Container /- -->
     <div class="section-padding"></div>
-</div><!-- Order Section 1 /- -->
+</div><!-- Welcome Section 1 /- -->
+
+<!-- Call Out -->
+<div class="call-out container-fluid no-padding">
+	<div class="section-padding"></div>
+	<div class="callout-bg-color">
+		<div class="col-md-5 img-box">
+			<img src="images/call-out.png" alt="call-out" width="273" height="288" />
+		</div>
+		<div class="col-md-7 callout-content">
+			<p>for more infomation,contact us on: (+1-800-23-456-7890)</p>
+		</div>
+	</div><!-- Container /- -->
+	<div class="section-padding"></div>
+	<div class="section-padding"></div>
+</div><!-- Call Out /- -->
 
 <!-- Menu Section -->
 <div class="menu-section container-fluid no-padding">
@@ -142,5 +125,49 @@
         </div>
     </div>
 </div><!-- Menu Section /- -->
+
+<!-- Order Section 1 -->
+<div class="order-section order-section-1 container-fluid no-padding">
+    <div class="section-padding"></div>
+    <div class="container">
+        <div class="section-header">
+            <h3>Choose your Flavour</h3>
+            <h5>Order Online</h5>
+            <img src="images/section-seprator.png" alt="section-seprator" width="169" height="15">
+            <p>The day for a three hour tour a three hour tour then one day he was shooting at some food and up through the ground came a oil that is its a beautiful day.</p>
+        </div><!-- Section Header /-  -->
+
+        <form>
+        <div class="col-md-4 col-sm-4 col-xs-4">
+            <input type="text" class="form-control" placeholder="Name *" required />
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-4">
+            <input type="text" class="form-control" placeholder="Phone Number *" required />
+        </div>
+        <div class="form-group col-md-4 col-sm-4 col-xs-4">
+            <select>
+                <option>FLAVOURS</option>
+                <option>FLAVOURS</option>
+                <option>FLAVOURS</option>
+                <option>FLAVOURS</option>
+            </select>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <textarea class="form-control" rows="4" placeholder="Your Address *"></textarea>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 order-links">
+            <a href="#" title="Order Now" class="order-now">Order Now</a>
+            <a href="#" title="Free Delivery" class="free-delivery">Free Delivery</a>
+        </div>
+        <div class="working-hours">
+            <p><span>working hours:</span> monday to friday : 8.30AM - 10.30PM</p>
+            <p>saturday : 9.00AM - 10.30PM</p>
+            <p>sunday : <span>closed</span></p>
+        </div>
+    </form>
+    </div><!-- Container /- -->
+    <div class="section-padding"></div>
+</div><!-- Order Section 1 /- -->
+
 <div class="section-padding"></div>
 @endsection
