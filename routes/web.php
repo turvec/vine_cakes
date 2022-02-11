@@ -1,5 +1,7 @@
 <?php
 
+use App\User;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,11 +17,21 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-})->name('welcome');;
+})->name('welcome');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::middleware(['auth'])->get('/dashboard', function () {
+    $users = User::all();
+    $usertype = Auth::user()->usertype;
+    if ($usertype == 'admin') {
+        return view('admin.dashboard',compact('users'));
+    } else {
+        return redirect()->route('welcome');
+    }
+})->name('dashboard');
 
 Route::get('/about', 'HomeController@about')->name('about');
 
