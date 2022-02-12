@@ -18,12 +18,23 @@ class StoryController extends Controller
         $story->age = $request->age;
         $story->story = $request->story;
         $story->save();
+
+        return redirect()->route('all_story');
     }
 
     public function allStory()
     {
-        $story = Story::all();
-        return view('admin.all_story', compact('story'));
+        $stories = Story::all();
+        return view('admin.all_story', compact('stories'));
     }
+
+    public function deleteStory($id)
+    {
+        $story = Story::find($id);
+        $story->delete();
+
+        return back();
+    }
+
 
 }

@@ -50,10 +50,20 @@ Route::get('/blog-post', 'HomeController@singleBlog')->name('single-blog');
 
 Route::get('/add-story', 'StoryController@addStory')->name('add_story');
 
-Route::get('/upload-story', 'StoryController@uploadStory')->name('upload_story');
+Route::post('/upload-story', 'StoryController@uploadStory')->name('upload_story');
 
 Route::get('/all-story', 'StoryController@allStory')->name('all_story');
 
+Route::get('/{id}/delete-story', 'StoryController@deleteStory')->name('delete_story');
+
+
+Route::get('/add-team', 'TeamController@addTeam')->name('add_team');
+
+Route::post('/upload-team', 'TeamController@uploadTeam')->name('upload_team');
+
+Route::get('/all-team', 'TeamController@allTeam')->name('all_team');
+
+Route::get('/{id}/delete-team', 'TeamController@deleteTeam')->name('delete_team');
 
 
 

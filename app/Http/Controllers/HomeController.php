@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Story;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -24,7 +25,8 @@ class HomeController extends Controller
      */
     public function about()
     {
-        return view('about');
+        $story = Story::take(1);
+        return view('about', compact('story'));
     }
 
      /**
