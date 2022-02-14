@@ -63,7 +63,24 @@ Route::post('/upload-team', 'TeamController@uploadTeam')->name('upload_team');
 
 Route::get('/all-team', 'TeamController@allTeam')->name('all_team');
 
+Route::get('/{id}/edit-team', 'TeamController@editTeam')->name('edit_team');
+
+Route::post('/{id}/update-team', 'TeamController@updateTeam')->name('update_team');
+
 Route::get('/{id}/delete-team', 'TeamController@deleteTeam')->name('delete_team');
+
+Route::get('/add-review', 'ReviewController@addReview')->name('add_review');
+
+Route::post('/upload-review', 'ReviewController@uploadReview')->name('upload_review');
+
+Route::get('/all-review', 'ReviewController@allReview')->name('all_review');
+
+Route::get('/{id}/edit-review', 'ReviewController@editReview')->name('edit_review');
+
+Route::post('/{id}/update-review', 'ReviewController@updateReview')->name('update_review');
+
+Route::get('/{id}/delete-review', 'ReviewController@deleteReview')->name('delete_review');
+
 
 
 

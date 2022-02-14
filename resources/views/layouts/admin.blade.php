@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Uena - Restaurant Admin Dashboard </title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="admin/images/favicon.png">
-	<link rel="stylesheet" href="admin/vendor/chartist/css/chartist.min.css">
-    <link href="admin/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
-    <link href="admin/css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="/admin/images/favicon.png">
+	<link rel="stylesheet" href="/admin/vendor/chartist/css/chartist.min.css">
+    <link href="/admin/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="/admin/css/style.css" rel="stylesheet">
 
 </head>
 <body>
@@ -92,7 +92,7 @@
 											<li>
 												<div class="timeline-panel">
 													<div class="media mr-2">
-														<img alt="image" width="50" src="admin/images/avatar/1.jpg">
+														<img alt="image" width="50" src="/admin/images/avatar/1.jpg">
 													</div>
 													<div class="media-body">
 														<h6 class="mb-1">Dr sultads Send you Photo</h6>
@@ -125,7 +125,7 @@
 											 <li>
 												<div class="timeline-panel">
 													<div class="media mr-2">
-														<img alt="image" width="50" src="admin/images/avatar/1.jpg">
+														<img alt="image" width="50" src="/admin/images/avatar/1.jpg">
 													</div>
 													<div class="media-body">
 														<h6 class="mb-1">Dr sultads Send you Photo</h6>
@@ -162,7 +162,7 @@
                             </li>
                             <li class="nav-item dropdown header-profile">
                                 <a class="nav-link" href="#" role="button" data-toggle="dropdown">
-                                    <img src="admin/images/profile/pic1.jpg" width="20" alt=""/>
+                                    <img src="/admin/images/profile/pic1.jpg" width="20" alt=""/>
 									<div class="header-info">
 										<span class="fs-20 font-w500">{{Auth::user()->name}}</span>
 										<small>Super Admin</small>
@@ -239,22 +239,22 @@
         Scripts
     ***********************************-->
     <!-- Required vendors -->
-    <script src="admin/vendor/global/global.min.js"></script>
-	<script src="admin/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-	<script src="admin/vendor/chart.js/Chart.bundle.min.js"></script>
+    <script src="/admin/vendor/global/global.min.js"></script>
+	<script src="/admin/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+	<script src="/admin/vendor/chart.js/Chart.bundle.min.js"></script>
 
 	<!-- Chart piety plugin files -->
-    <script src="admin/vendor/peity/jquery.peity.min.js"></script>
+    <script src="/admin/vendor/peity/jquery.peity.min.js"></script>
 
 	<!-- Apex Chart -->
-	<script src="admin/vendor/apexchart/apexchart.js"></script>
+	<script src="/admin/vendor/apexchart/apexchart.js"></script>
 
 	<!-- Dashboard 1 -->
-	<script src="admin/js/dashboard/dashboard-2.js"></script>
+	<script src="/admin/js/dashboard/dashboard-2.js"></script>
 
-    <script src="admin/js/custom.min.js"></script>
-	<script src="admin/js/demo.js"></script>
-    <script src="admin/js/styleSwitcher.js"></script>
+    <script src="/admin/js/custom.min.js"></script>
+	<script src="/admin/js/demo.js"></script>
+    <script src="/admin/js/styleSwitcher.js"></script>
 </body>
 
 <!-- Mirrored from d2v79rrf7hys7i.cloudfront.net/xhtml/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Jan 2022 22:34:55 GMT -->

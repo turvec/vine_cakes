@@ -4,15 +4,10 @@
 <div class="content-body">
     <div class="container-fluid">
         <div class="row page-titles mx-0">
-            <div class="col-sm-6 p-md-0">
-                <div class="welcome-text">
-                    <h4>Hi, welcome back!</h4>
-                    <span>Element</span>
-                </div>
-            </div>
+            @include('components.page_title')
             <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="javascript:void(0)">Chef</a></li>
+                    <li class="breadcrumb-item"><a href="javascript:void(0)">Team</a></li>
                     <li class="breadcrumb-item active"><a href="javascript:void(0)">Upload</a></li>
                 </ol>
             </div>
@@ -26,41 +21,42 @@
                     </div>
                     <div class="card-body">
                         <div class="basic-form">
-                        <form action="{{route('upload_chef')}}" method="POST" enctype="multipart/form-data">
+                        <form action="{{route('upload_team')}}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 <div class="input-group mb-4 input-primary">
                                     <div class="input-group-append">
-                                        <span class="input-group-text">Chef Name</span>
+                                        <span class="input-group-text">Team Name</span>
                                     </div>
                                     <input name="name" type="text" class="form-control" placeholder="Input name" required>
 
                                 </div>
                                 <div class="input-group mb-4 input-primary">
                                     <div class="input-group-append">
-                                        <span class="input-group-text">Chef Email</span>
+                                        <span class="input-group-text">Team Email</span>
                                     </div>
-                                    <input name="email" type="email" class="form-control" placeholder="Input an email" required>
+                                    <input name="email" type="email" class="form-control" placeholder="Input an email" >
 
                                 </div>
                                 <div class="input-group mb-4 input-primary">
                                     <div class="input-group-append">
-                                        <span class="input-group-text">Chef Phone</span>
+                                        <span class="input-group-text">Team Phone</span>
                                     </div>
-                                    <input name="phone" type="num" class="form-control" placeholder="Input phone no." required>
+                                    <input name="phone" type="num" class="form-control" placeholder="Input phone no." >
 
                                 </div>
                                 <div class="input-group mb-4 input-primary">
                                     <div class="input-group-append">
-                                        <span class="input-group-text">Chef Image</span>
+                                        <span class="input-group-text">Team Image</span>
                                     </div>
-                                    <input name="image" type="file" class="form-control" placeholder="Upload Image" required>
+                                    <input name="image" type="file" class="form-control" placeholder="Upload Image" >
 
                                 </div>
+
                                 <div class="input-group mb-4 input-primary">
                                     <div class="input-group-append">
-                                        <span class="input-group-text">Add Profession ?</span>
+                                        <span class="input-group-text">Position</span>
                                     </div>
-                                    <input name="profession" type="text" class="form-control" placeholder="Want to show profession?">
+                                    <input name="position" type="text" class="form-control">
 
                                 </div>
                                 <div class="input-group mb-4 input-primary">
@@ -68,6 +64,34 @@
                                         <span class="input-group-text">Comment</span>
                                     </div>
                                     <textarea name="comment" class="form-control"></textarea>
+
+                                </div>
+                                <div class="input-group mb-4 input-primary">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">Facebook</span>
+                                    </div>
+                                    <input name="facebook" type="text" class="form-control"  >
+
+                                </div>
+                                <div class="input-group mb-4 input-primary">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">Instagram</span>
+                                    </div>
+                                    <input name="insta" type="text" class="form-control"  >
+
+                                </div>
+                                <div class="input-group mb-4 input-primary">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">Twitter</span>
+                                    </div>
+                                    <input name="twitter" type="text" class="form-control"  >
+
+                                </div>
+                                <div class="input-group mb-4 input-primary">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">Linkedin</span>
+                                    </div>
+                                    <input name="linkedin" type="text" class="form-control"  >
 
                                 </div>
 

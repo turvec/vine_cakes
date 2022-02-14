@@ -11,8 +11,18 @@
                     <span class="nav-text">About</span>
                 </a>
                 <ul aria-expanded="false">
-                    <li><a href="{{route('add_story')}}">Add Story & Experience</a></li>
-                    <li><a href="{{route('all_story')}}">View all</a></li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Our Story</a>
+                        <ul aria-expanded="false">
+                            <li><a href="{{route('add_story')}}">Add Story & Experience</a></li>
+                            <li><a href="{{route('all_story')}}">View all</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Our Team</a>
+                        <ul aria-expanded="false">
+                            <li><a href="{{route('add_team')}}">Add Member</a></li>
+                            <li><a href="{{route('all_team')}}">View all</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </li>
         </ul>
