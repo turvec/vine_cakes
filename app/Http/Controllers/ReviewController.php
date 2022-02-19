@@ -18,16 +18,17 @@ class ReviewController extends Controller
             'comment' => 'required|max:255',
             'name' => 'required|max:255'
         ]);
+        $ext = $request->file('image')->getClientOriginalExtension();
+            $imagename = \Str::slug($request->name).time().'.'.$ext;
+            $request->image->move(public_path('reviewimage'),$imagename);
+
+
         $data = new Review();
         $data->name = $request->name;
         $data->profession = $request->profession;
         $data->comment = $request->comment;
-        if ($request->has('image')) {
-            $ext = $request->file('image')->getClientOriginalExtension();
-            $imagename = \Str::slug($request->name).time().'.'.$ext;
-            $request->image->move(public_path('reviewimage'),$imagename);
-            $data->image = $request->image;
-        }
+        $data->image = $request->image;
+
         $data->save();
 
         return redirect()->route('all_review');

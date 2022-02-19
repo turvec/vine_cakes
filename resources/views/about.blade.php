@@ -13,7 +13,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-6 col-xs-6">
-                <img src="images/welcome.png" alt="welcome" width="457" height="700" />
+                <img src="/storyimage/{{$story->image}}" alt="welcome" width="457" height="700" />
             </div>
             <div class="col-md-6 col-sm-6 col-xs-6 wc-content-box">
                 <div class="welcome-header">

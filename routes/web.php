@@ -99,3 +99,17 @@ Route::get('/{id}/delete-gallery', 'GalleryController@deleteGallery')->name('del
 Route::get('/edit-agenda', 'AgendaController@editAgenda')->name('edit_agenda');
 
 Route::post('/{id}/update-agenda', 'AgendaController@updateAgenda')->name('update_agenda');
+
+//
+
+Route::get('/add-service', 'ServiceController@addService')->name('add_service');
+
+Route::post('/upload-service', 'ServiceController@uploadService')->name('upload_service');
+
+Route::get('/all-service', 'ServiceController@allService')->name('all_service');
+
+Route::get('/{id}/edit-service', 'ServiceController@editService')->name('edit_service');
+
+Route::post('/{id}/update-service', 'ServiceController@updateService')->name('update_service');
+
+Route::get('/{id}/delete-service', 'ServiceController@deleteService')->name('delete_service');
