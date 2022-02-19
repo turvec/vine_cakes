@@ -53,19 +53,18 @@
 				<img src="images/welcome.png" alt="welcome" width="457" height="700" />
 			</div>
 			<div class="col-md-6 col-sm-6 col-xs-6 wc-content-box">
-				<div class="welcome-header">
-					<span>30</span><h5>Years</h5> <h5>Of Excellence</h5>
-				</div>
-				<div class="welcome-content">
-					<div class="section-header left-header">
-						<h3>About Us</h3>
-						<h5>Our story</h5>
-						<img src="images/section-seprator-1.png" alt="section-seprator" width="70" height="3">
-						<p>The day for a three hour tour a three hour tour then one day he was shooting at some food and up through the ground came a oil that is its a beautiful day Got a dream and we just know now we are gonna make our dream come true so get a witch is shawl on a broomstick you can crawl on were gonna pay.</p>
-						<a href="#" title="Read More" class="read-more">Read More</a>
-					</div><!-- Section Header /-  -->
-				</div>
-			</div>
+                <div class="welcome-header">
+                    <span>{{$story->age}}</span><h5>Years</h5> <h5>Of Excellence</h5>
+                </div>
+                <div class="welcome-content">
+                    <div class="section-header left-header">
+                        <h3>About Us</h3>
+                        <h5>Our story</h5>
+                        <img src="images/section-seprator-1.png" alt="section-seprator" width="70" height="3">
+                        <p>{{$story->story}}</p>
+                    </div><!-- Section Header /-  -->
+                </div>
+            </div>
 		</div>
 	</div><!-- Container /- -->
 </div><!-- Welcome Section /- -->
@@ -120,78 +119,17 @@
 	</div><!-- Container / -->
 
 	<ul class="portfolio-list no-left-padding">
-		<li class="col-md-3 col-sm-4 col-xs-6 no-padding wide design">
+        @foreach ($galleries as $gallery)
+		<li class="col-md-3 col-sm-4 col-xs-6 no-padding {{$loop->first ? 'wide' : ''}}">
 			<div class="content-image-block">
-				<a href=".html#"><img src="images/gallery-1.jpg" alt="gallery" width="640" height="500"></a>
+				<a href=".html#"><img src="/galleryimage/{{$gallery->image}}" alt="gallery" width="640" height="500"></a>
 				<div class="content-block-hover">
-					<h3>cream berry</h3>
-					<p>The shooting at some food and up through the ground oil.</p>
+					<h3>{{$gallery->title}}</h3>
+                    <p>{{$gallery->description}}</p>
 				</div>
 			</div>
 		</li>
-		<li class="col-md-3 col-sm-4 col-xs-6 no-padding web">
-			<div class="content-image-block">
-				<a href=".html#"><img src="images/gallery-2.jpg" alt="gallery" width="320" height="500"></a>
-				<div class="content-block-hover">
-					<h3>cream berry</h3>
-					<p>The shooting at some food and up through the ground oil.</p>
-				</div>
-			</div>
-		</li>
-		<li class="col-md-3 col-sm-4 col-xs-6 no-padding video">
-			<div class="content-image-block">
-				<a href=".html#"><img src="images/gallery-3.jpg" alt="gallery" width="320" height="250"></a>
-				<div class="content-block-hover">
-					<h3>cream berry</h3>
-					<p>The shooting at some food and up through the ground oil.</p>
-				</div>
-			</div>
-		</li>
-		<li class="col-md-3 col-sm-4 col-xs-6 no-padding design">
-			<div class="content-image-block">
-				<a href=".html#"><img src="images/gallery-4.jpg" alt="gallery" width="320" height="250"></a>
-				<div class="content-block-hover">
-					<h3>cream berry</h3>
-					<p>The shooting at some food and up through the ground oil.</p>
-				</div>
-			</div>
-		</li>
-		<li class="col-md-3 col-sm-4 col-xs-6 no-padding web">
-			<div class="content-image-block">
-				<a href=".html#"><img src="images/gallery-5.jpg" alt="gallery" width="320" height="250"></a>
-				<div class="content-block-hover">
-					<h3>cream berry</h3>
-					<p>The shooting at some food and up through the ground oil.</p>
-				</div>
-			</div>
-		</li>
-		<li class="col-md-3 col-sm-4 col-xs-6 no-padding video">
-			<div class="content-image-block">
-				<a href=".html#"><img src="images/gallery-6.jpg" alt="gallery" width="320" height="250"></a>
-				<div class="content-block-hover">
-					<h3>cream berry</h3>
-					<p>The shooting at some food and up through the ground oil.</p>
-				</div>
-			</div>
-		</li>
-		<li class="col-md-3 col-sm-4 col-xs-6 no-padding design">
-			<div class="content-image-block">
-				<a href=".html#"><img src="images/gallery-7.jpg" alt="gallery" width="320" height="250"></a>
-				<div class="content-block-hover">
-					<h3>cream berry</h3>
-					<p>The shooting at some food and up through the ground oil.</p>
-				</div>
-			</div>
-		</li>
-		<li class="col-md-3 col-sm-4 col-xs-6 no-padding web">
-			<div class="content-image-block">
-				<a href=".html#"><img src="images/gallery-8.jpg" alt="gallery" width="320" height="250"></a>
-				<div class="content-block-hover">
-					<h3>cream berry</h3>
-					<p>The shooting at some food and up through the ground oil.</p>
-				</div>
-			</div>
-		</li>
+        @endforeach
 	</ul>
 	<a href="gallery-2.html" title="View More" class="view-more">View More</a>
 	<div class="section-padding"></div>
@@ -227,29 +165,15 @@
 				<li data-target="#main-carousel2" data-slide-to="2"></li>
 			</ol>
 			<div role="listbox" class="carousel-inner">
-				<div class="item active">
-					<div class="testimonial-content">
-						<p><span><i class="fa fa-quote-left"></i></span>  The day for a three hour tour a three hour tour then one day he was shooting at some food and up through the ground came a oil that is its a beautiful day. <span><i class="fa fa-quote-right"></i></span></p>
-						<img src="images/testimonial.jpg" alt="testimonial" height="89" width="89" />
-						<h3>bradshaw <span>Co-Founder</span></h3>
-					</div>
-				</div>
-
-				<div class="item">
-					<div class="testimonial-content">
-						<p><span><i class="fa fa-quote-left"></i></span>  The day for a three hour tour a three hour tour then one day he was shooting at some food and up through the ground came a oil that is its a beautiful day. <span><i class="fa fa-quote-right"></i></span></p>
-						<img src="images/testimonial.jpg" alt="testimonial" height="89" width="89" />
-						<h3>bradshaw <span>Co-Founder</span></h3>
-					</div>
-				</div>
-
-				<div class="item">
-					<div class="testimonial-content">
-						<p><span><i class="fa fa-quote-left"></i></span>  The day for a three hour tour a three hour tour then one day he was shooting at some food and up through the ground came a oil that is its a beautiful day. <span><i class="fa fa-quote-right"></i></span></p>
-						<img src="images/testimonial.jpg" alt="testimonial" height="89" width="89" />
-						<h3>bradshaw <span>Co-Founder</span></h3>
-					</div>
-				</div>
+				@foreach ($reviews as $review)
+                <div class="item {{ $loop->first ? 'active' : '' }}">
+                    <div class="testimonial-content">
+                        <p><span><i class="fa fa-quote-left"></i></span> {{$review->comment}} <span><i class="fa fa-quote-right"></i></span></p>
+                        <img src="/reviewimage/{{$review->image}}" alt="testimonial" height="89" width="89" />
+                        <h3>{{$review->name}} <span>{{$review->profession}}</span></h3>
+                    </div>
+                </div>
+                @endforeach
 			</div>
 		</div><!-- Main Carousel /-  -->
 	</div><!-- Container /- -->

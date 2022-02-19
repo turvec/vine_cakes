@@ -94,18 +94,19 @@
             <p>Send us your info and what you applying for and we will keep you noted</p>
         </div><!-- Section Header /-  -->
 
-        <form>
+        <form action="{{route('upload_application')}}" method="POST">
+            @csrf
         <div class="col-md-3 col-sm-6 col-xs-6">
-            <input type="text" class="form-control" placeholder="Name *" required />
+            <input name="name" type="text" class="form-control" placeholder="Name *" required />
         </div>
         <div class="col-md-3 col-sm-6 col-xs-6">
-            <input type="text" class="form-control" placeholder="Email Address *" required />
+            <input name="email" type="email" class="form-control" placeholder="Email Address *" required />
         </div>
         <div class="col-md-3 col-sm-6 col-xs-6">
-            <input type="text" class="form-control" placeholder="Phone Number *" required />
+            <input name="phone" type="tel" class="form-control" placeholder="Phone Number *" required />
         </div>
         <div class="form-group col-md-3 col-sm-6 col-xs-6">
-            <select>
+            <select name="subject">
                 <option>Subject</option>
                 @foreach ($services as $s)
                 <option>{{$s->name}}</option>
@@ -115,10 +116,16 @@
             </select>
         </div>
         <div class="col-md-12 col-sm-12 col-xs-12">
-            <textarea class="form-control" rows="4" placeholder="Attach a Message? *"></textarea>
+            <textarea name="message" class="form-control" rows="4" placeholder="Attach a Message? *"></textarea>
         </div>
         <div class="col-md-12 col-sm-12 col-xs-12 order-links">
-            <a href="#" title="Apply" class="order-now">Apply</a>
+
+            <a  title="Apply" class="order-now">
+                <button type="submit" style="background-color: transparent;border:none">
+                Apply
+            </button>
+            </a>
+
         </div>
         <div class="working-hours">
             <p><span>working hours:</span> monday to friday : 8.30AM - 10.30PM</p>

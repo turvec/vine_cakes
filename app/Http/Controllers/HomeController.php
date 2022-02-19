@@ -20,7 +20,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $story = Story::first();
+        $galleries = Gallery::all();
+        $reviews = Review::all();
+        return view('welcome',compact('story','galleries','reviews'));
     }
 
      /**

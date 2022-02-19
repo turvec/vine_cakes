@@ -53,6 +53,7 @@
                     <ul aria-expanded="false">
                         <li><a href="{{route('add_service')}}">Add new services</a></li>
                         <li><a href="{{route('all_service')}}">View all services</a></li>
+                        <li><a href="{{route('all_application')}}">View all Applications</a></li>
                     </ul>
                 </li>
             </ul>

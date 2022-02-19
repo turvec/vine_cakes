@@ -15,13 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('welcome');
+Route::get('/', 'HomeController@index')->name('welcome');
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
 
 Route::middleware(['auth'])->get('/dashboard', function () {
     $users = User::all();
@@ -113,3 +109,11 @@ Route::get('/{id}/edit-service', 'ServiceController@editService')->name('edit_se
 Route::post('/{id}/update-service', 'ServiceController@updateService')->name('update_service');
 
 Route::get('/{id}/delete-service', 'ServiceController@deleteService')->name('delete_service');
+
+//
+
+Route::post('/upload-application', 'ApplicationController@uploadApplication')->name('upload_application');
+
+Route::get('/all-application', 'ApplicationController@allApplication')->name('all_application');
+
+Route::get('/{id}/delete-application', 'ApplicationController@deleteApplication')->name('delete_application');

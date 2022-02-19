@@ -95,23 +95,31 @@
 					<div id="navbar" class="navbar-collapse collapse navbar-right">
 						<ul class="nav navbar-nav">
 							<li class="dropdown active">
-								<a href="{{route('welcome')}}" title="Portfolio" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+								<a href="{{route('welcome')}}"  class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
 								<i class="ddl-switch fa fa-angle-down"></i>
 								<ul class="dropdown-menu">
-									<li><a href="{{route('welcome')}}" title="Portfolio grid">Home 1</a></li>
+									<li><a href="{{route('welcome')}}">Home Page</a></li>
 								</ul>
 							</li>
 							<li class="dropdown">
-								<a href="#" title="Pages" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+								<a href="{{route('about')}}"  class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">About us</a>
 								<i class="ddl-switch fa fa-angle-down"></i>
 								<ul class="dropdown-menu">
 									<li><a href="{{route('about')}}" title="About">About us</a></li>
-									<li><a href="{{route('services')}}" title="Services">Services</a></li>
-									<li><a href="{{route('gallery')}}" title="Gallery">Gallery</a></li>
 								</ul>
 							</li>
-							<li><a href="#menu-section" title="Features">Features</a></li>
-							<li><a href="{{route('gallery')}}" title="Portfolio">Portfolio</a></li>
+							<li class="dropdown"><a href="{{route('services')}}" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
+                                <i class="ddl-switch fa fa-angle-down"></i>
+								<ul class="dropdown-menu">
+									<li><a href="{{route('services')}}" title="Services">Services</a></li>
+								</ul>
+                            </li>
+							<li class="dropdown"><a href="{{route('gallery')}}" title="explore" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Explore</a>
+                                <i class="ddl-switch fa fa-angle-down"></i>
+								<ul class="dropdown-menu">
+									<li><a href="{{route('gallery')}}" title="Explore">Explore</a></li>
+								</ul>
+                            </li>
 							<li class="dropdown">
 								<a href="{{route('blog')}}" title="Latest News" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
 								<i class="ddl-switch fa fa-angle-down"></i>
@@ -123,7 +131,7 @@
 								<a href="{{route('contact')}}" title="Latest News" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Contact</a>
 								<i class="ddl-switch fa fa-angle-down"></i>
 								<ul class="dropdown-menu">
-									<li><a href="{{route('contact')}}" title="Contact 2">Contact 2</a></li>
+									<li><a href="{{route('contact')}}" title="Contact 2">Contact Us</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -192,11 +200,11 @@
 			<div class="footer-breadcrumb pull-right">
 				<ol class="breadcrumb">
 					<li title="Home" class="active">Home</li>
-					<li><a title="About Us" href="about.html">About</a></li>
-					<li><a title="Services" href="services.html">Services</a></li>
-					<li><a title="Portfolio" href="gallery-2.html">Portfolio</a></li>
-					<li><a title="Blog" href="blog.html">Blog</a></li>
-					<li><a title="Contact" href="contact-2.html">Contact</a></li>
+					<li><a title="About Us" href="{{route('about')}}">About</a></li>
+					<li><a title="Services" href="{{route('services')}}">Services</a></li>
+					<li><a title="explore" href="{{route('gallery')}}">Explore</a></li>
+					<li><a title="Blog" href="{{route('blog')}}">Blog</a></li>
+					<li><a title="Contact" href="{{route('contact')}}">Contact</a></li>
 				</ol>
 			</div>
 		</div>
