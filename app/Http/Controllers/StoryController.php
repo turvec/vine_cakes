@@ -7,31 +7,24 @@ use Illuminate\Http\Request;
 
 class StoryController extends Controller
 {
-    public function addStory()
+    public function editStory()
     {
-        return view('admin.add_story');
+        $story = Story::first();
+        return view('admin.update_story', compact('story'));
     }
 
-    public function uploadStory(Request $request)
-    {
-        $story = new Story();
-        $story->age = $request->age;
-        $story->story = $request->story;
-        $story->save();
-
-        return redirect()->route('all_story');
-    }
-
-    public function allStory()
-    {
-        $stories = Story::all();
-        return view('admin.all_story', compact('stories'));
-    }
-
-    public function deleteStory($id)
+    public function updateStory(Request $request,$id)
     {
         $story = Story::find($id);
-        $story->delete();
+        $story->age = $request->age;
+        $story->story = $request->story;
+        if ($request->has('image')) {
+            $ext = $request->file('image')->getClientOriginalExtension();
+            $imagename = \Str::slug($request->age).time().'.'.$ext;
+            $request->image->move(public_path('storyimage'),$imagename);
+            $story->image = $request->image;
+        }
+        $story->save();
 
         return back();
     }

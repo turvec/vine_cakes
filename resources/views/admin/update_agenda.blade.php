@@ -7,8 +7,8 @@
             @include('components.page_title')
             <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="javascript:void(0)">Story & Experience</a></li>
-                    <li class="breadcrumb-item active"><a href="javascript:void(0)">Upload</a></li>
+                    <li class="breadcrumb-item"><a href="javascript:void(0)">Service</a></li>
+                    <li class="breadcrumb-item active"><a href="javascript:void(0)">Update</a></li>
                 </ol>
             </div>
         </div>
@@ -21,20 +21,34 @@
                     </div>
                     <div class="card-body">
                         <div class="basic-form">
-                        <form action="{{route('upload_story')}}" method="POST" enctype="multipart/form-data">
+                        <form action="{{route('update_agenda',$agenda->id)}}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 <div class="input-group mb-4 input-primary">
                                     <div class="input-group-append">
-                                        <span class="input-group-text">Number of Years</span>
+                                        <span class="input-group-text">Qoute</span>
                                     </div>
-                                    <input name="age" type="text" class="form-control" placeholder=" Vine Cakes Company Years of Existence">
+                                    <input name="qoute" type="text" class="form-control" value="{{$agenda->qoute}}" >
 
                                 </div>
                                 <div class="input-group mb-4 input-primary">
                                     <div class="input-group-append">
-                                        <span class="input-group-text">Story</span>
+                                        <span class="input-group-text">Mission</span>
                                     </div>
-                                    <input name="story" type="text" class="form-control" placeholder="Our Story">
+                                    <input name="mission" type="text" class="form-control" value="{{$agenda->mission}}" >
+
+                                </div>
+                                <div class="input-group mb-4 input-primary">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">Vision</span>
+                                    </div>
+                                    <input name="vision" type="text" class="form-control" value="{{$agenda->vision}}" >
+
+                                </div>
+                                <div class="input-group mb-4 input-primary">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">Aim</span>
+                                    </div>
+                                    <input name="aim" type="text" class="form-control" value="{{$agenda->aim}}">
 
                                 </div>
 
@@ -43,7 +57,7 @@
                                         <span class="btn-icon-left text-primary">
                                             <i class="fa fa-upload color-primary"></i>
                                         </span>
-                                        Upload
+                                        Update
                                     </button>
                                 </div>
 

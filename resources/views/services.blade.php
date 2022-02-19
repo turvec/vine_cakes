@@ -15,7 +15,7 @@
             <h3>Welcome To Cake</h3>
             <h5>Our Story</h5>
             <img src="images/section-seprator.png" alt="section-seprator" width="169" height="15">
-            <p>The day for a three hour tour a three hour tour then one day he was shooting at some food and up through the ground came a oil that is its a beautiful day.</p>
+            <p>{{$agenda->qoute}}</p>
         </div><!-- Section Header /-  -->
         <div class="col-md-7 col-sm-7 col-xs-6 wc-img-box">
             <img src="images/welcome-1.png" alt="welcome" width="754" height="502" />
@@ -25,19 +25,19 @@
             <div class="mission-content">
                 <img src="images/welcome-ic-1.png" alt="welcome-ic" width="71" height="71">
                 <h3>Our Mission</h3>
-                <p>The day for a three hour tour a three hour tour then one day he was shooting.</p>
+                <p>{{$agenda->mission}}</p>
             </div>
 
             <div class="mission-content">
                 <img src="images/welcome-ic-2.png" alt="welcome-ic" width="71" height="71">
                 <h3>Our vision</h3>
-                <p>The day for a three hour tour a three hour tour then one day he was shooting.</p>
+                <p>{{$agenda->vision}}</p>
             </div>
 
             <div class="mission-content">
                 <img src="images/welcome-ic-3.png" alt="welcome-ic" width="71" height="71">
                 <h3>What We do</h3>
-                <p>The day for a three hour tour a three hour tour then one day he was shooting.</p>
+                <p>{{$agenda->aim}}</p>
             </div>
         </div>
     </div><!-- Container /- -->

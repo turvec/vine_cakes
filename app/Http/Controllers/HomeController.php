@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Agenda;
+use App\Gallery;
 use App\Review;
 use App\Story;
 use App\Team;
@@ -40,7 +42,8 @@ class HomeController extends Controller
      */
     public function services()
     {
-        return view('services');
+        $agenda = Agenda::first();
+        return view('services',compact('agenda'));
     }
 
      /**
@@ -60,7 +63,8 @@ class HomeController extends Controller
      */
     public function gallery()
     {
-        return view('gallery');
+        $galleries = Gallery::all();
+        return view('gallery', compact('galleries'));
     }
 
      /**

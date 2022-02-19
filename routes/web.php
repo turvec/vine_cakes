@@ -48,13 +48,9 @@ Route::get('/blog-post', 'HomeController@singleBlog')->name('single-blog');
 
 // Admin area
 
-Route::get('/add-story', 'StoryController@addStory')->name('add_story');
+Route::get('/edit-story', 'StoryController@editStory')->name('edit_story');
 
-Route::post('/upload-story', 'StoryController@uploadStory')->name('upload_story');
-
-Route::get('/all-story', 'StoryController@allStory')->name('all_story');
-
-Route::get('/{id}/delete-story', 'StoryController@deleteStory')->name('delete_story');
+Route::post('/{id}/update-story', 'StoryController@updateStory')->name('update_story');
 
 //
 
@@ -98,4 +94,8 @@ Route::post('/{id}/update-gallery', 'GalleryController@updateGallery')->name('up
 
 Route::get('/{id}/delete-gallery', 'GalleryController@deleteGallery')->name('delete_gallery');
 
+//
 
+Route::get('/edit-agenda', 'AgendaController@editAgenda')->name('edit_agenda');
+
+Route::post('/{id}/update-agenda', 'AgendaController@updateAgenda')->name('update_agenda');

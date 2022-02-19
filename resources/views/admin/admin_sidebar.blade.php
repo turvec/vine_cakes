@@ -13,8 +13,7 @@
                 <ul aria-expanded="false">
                     <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Our Story</a>
                         <ul aria-expanded="false">
-                            <li><a href="{{route('add_story')}}">Add Our Story</a></li>
-                            <li><a href="{{route('all_story')}}">View all</a></li>
+                            <li><a href="{{route('edit_story')}}">Edit Our Story</a></li>
                         </ul>
                     </li>
                     <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Our Team</a>
@@ -31,6 +30,27 @@
                     </li>
                 </ul>
             </li>
+            <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <i class="flaticon-022-copy"></i>
+                    <span class="nav-text">Explore</span>
+                </a>
+                <ul aria-expanded="false">
+                    <li><a href="{{route('add_gallery')}}">Add Explore</a></li>
+                    <li><a href="{{route('all_gallery')}}">View all</a></li>
+                </ul>
+            </li>
+            <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                <i class="flaticon-022-copy"></i>
+                <span class="nav-text">Services</span>
+            </a>
+            <ul aria-expanded="false">
+                <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Our agenda</a>
+                    <ul aria-expanded="false">
+                        <li><a href="{{route('edit_agenda')}}">Edit Our agenda</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
         </ul>
 
 
