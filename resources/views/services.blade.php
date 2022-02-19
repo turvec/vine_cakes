@@ -71,59 +71,16 @@
         </div><!-- Section Header /-  -->
     </div><!-- Container /- -->
 
+    @foreach ($services as $service)
     <div class="col-md-6 col-sm-6 col-xs-6">
         <div class="menu-box">
-            <img src="images/menu-1.png" alt="menu" />
-            <h3>CHOCOLATE FLASH <span>$20.00</span></h3>
-            <p>The day he wane day he was shooting at some food and up through the ground.</p>
-            <a href="#" title="Order Now">Order Now</a>
+            <img src="/serviceimage/{{$service->image}}" alt="menu" height="150px" width="300px" />
+            <h3>{{$service->name}} <span>${{$service->price}}</span></h3>
+            <p>{{$service->description}}</p>
+            <a href="#" title="Apply Now!!">Apply Now!!</a>
         </div>
     </div>
-
-    <div class="col-md-6 col-sm-6 col-xs-6">
-        <div class="menu-box">
-            <img src="images/menu-2.png" alt="menu" />
-            <h3>ROSE CREAMY <span>$25.00</span></h3>
-            <p>The day he wane day he was shooting at some food and up through the ground.</p>
-            <a href="#" title="Order Now">Order Now</a>
-        </div>
-    </div>
-
-    <div class="col-md-6 col-sm-6 col-xs-6">
-        <div class="menu-box">
-            <img src="images/menu-3.png" alt="menu" />
-            <h3>VELVET CAKE <span>$32.00</span></h3>
-            <p>The day he wane day he was shooting at some food and up through the ground.</p>
-            <a href="#" title="Order Now">Order Now</a>
-        </div>
-    </div>
-
-    <div class="col-md-6 col-sm-6 col-xs-6">
-        <div class="menu-box">
-            <img src="images/menu-4.png" alt="menu" />
-            <h3>FLOWERED CAKE <span>$38.00</span></h3>
-            <p>The day he wane day he was shooting at some food and up through the ground.</p>
-            <a href="#" title="Order Now">Order Now</a>
-        </div>
-    </div>
-
-    <div class="col-md-6 col-sm-6 col-xs-6">
-        <div class="menu-box">
-            <img src="images/menu-5.png" alt="menu" />
-            <h3>ROSEBERRY CAKE <span>$48.00</span></h3>
-            <p>The day he wane day he was shooting at some food and up through the ground.</p>
-            <a href="#" title="Order Now">Order Now</a>
-        </div>
-    </div>
-
-    <div class="col-md-6 col-sm-6 col-xs-6">
-        <div class="menu-box">
-            <img src="images/menu-6.png" alt="menu" />
-            <h3>CHOCOLATE BERRY CAKE <span>$54.00</span></h3>
-            <p>The day he wane day he was shooting at some food and up through the ground.</p>
-            <a href="#" title="Order Now">Order Now</a>
-        </div>
-    </div>
+    @endforeach
 </div><!-- Menu Section /- -->
 
 <!-- Order Section 1 -->
@@ -131,33 +88,37 @@
     <div class="section-padding"></div>
     <div class="container">
         <div class="section-header">
-            <h3>Choose your Flavour</h3>
-            <h5>Order Online</h5>
+            <h3>Want Any of Our Services?</h3>
+            <h5>Apply Now!</h5>
             <img src="images/section-seprator.png" alt="section-seprator" width="169" height="15">
-            <p>The day for a three hour tour a three hour tour then one day he was shooting at some food and up through the ground came a oil that is its a beautiful day.</p>
+            <p>Send us your info and what you applying for and we will keep you noted</p>
         </div><!-- Section Header /-  -->
 
         <form>
-        <div class="col-md-4 col-sm-4 col-xs-4">
+        <div class="col-md-3 col-sm-6 col-xs-6">
             <input type="text" class="form-control" placeholder="Name *" required />
         </div>
-        <div class="col-md-4 col-sm-4 col-xs-4">
+        <div class="col-md-3 col-sm-6 col-xs-6">
+            <input type="text" class="form-control" placeholder="Email Address *" required />
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6">
             <input type="text" class="form-control" placeholder="Phone Number *" required />
         </div>
-        <div class="form-group col-md-4 col-sm-4 col-xs-4">
+        <div class="form-group col-md-3 col-sm-6 col-xs-6">
             <select>
-                <option>FLAVOURS</option>
-                <option>FLAVOURS</option>
-                <option>FLAVOURS</option>
-                <option>FLAVOURS</option>
+                <option>Subject</option>
+                @foreach ($services as $s)
+                <option>{{$s->name}}</option>
+                @endforeach
+                <option>More than one</option>
+                <option>Apply for all</option>
             </select>
         </div>
         <div class="col-md-12 col-sm-12 col-xs-12">
-            <textarea class="form-control" rows="4" placeholder="Your Address *"></textarea>
+            <textarea class="form-control" rows="4" placeholder="Attach a Message? *"></textarea>
         </div>
         <div class="col-md-12 col-sm-12 col-xs-12 order-links">
-            <a href="#" title="Order Now" class="order-now">Order Now</a>
-            <a href="#" title="Free Delivery" class="free-delivery">Free Delivery</a>
+            <a href="#" title="Apply" class="order-now">Apply</a>
         </div>
         <div class="working-hours">
             <p><span>working hours:</span> monday to friday : 8.30AM - 10.30PM</p>

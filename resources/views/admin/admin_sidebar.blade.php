@@ -49,6 +49,12 @@
                         <li><a href="{{route('edit_agenda')}}">Edit Our agenda</a></li>
                     </ul>
                 </li>
+                <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Our Services</a>
+                    <ul aria-expanded="false">
+                        <li><a href="{{route('add_service')}}">Add new services</a></li>
+                        <li><a href="{{route('all_service')}}">View all services</a></li>
+                    </ul>
+                </li>
             </ul>
         </li>
         </ul>

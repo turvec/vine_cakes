@@ -29,7 +29,7 @@
                                     </tr>
                                 </thead>
                                 <tbody id="customers">
-                                    @foreach ($galleries as $service)
+                                    @foreach ($services as $service)
                                     <tr class="btn-reveal-trigger">
                                         <td>
                                         <a href="#">

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Agenda;
 use App\Gallery;
 use App\Review;
+use App\Service;
 use App\Story;
 use App\Team;
 use Illuminate\Http\Request;
@@ -43,7 +44,8 @@ class HomeController extends Controller
     public function services()
     {
         $agenda = Agenda::first();
-        return view('services',compact('agenda'));
+        $services = Service::all();
+        return view('services',compact('agenda','services'));
     }
 
      /**
