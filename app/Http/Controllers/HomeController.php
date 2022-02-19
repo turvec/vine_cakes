@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Review;
 use App\Story;
+use App\Team;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -25,8 +27,10 @@ class HomeController extends Controller
      */
     public function about()
     {
-        $story = Story::take(1);
-        return view('about', compact('story'));
+        $story = Story::first();
+        $teams = Team::all();
+        $reviews = Review::all();
+        return view('about', compact('teams', 'story','reviews'));
     }
 
      /**

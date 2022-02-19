@@ -29,7 +29,7 @@ Route::middleware(['auth'])->get('/dashboard', function () {
     if ($usertype == 'admin') {
         return view('admin.dashboard',compact('users'));
     } else {
-        return back('welcome');
+        return redirect()->route('welcome');
     }
 })->name('dashboard');
 
@@ -56,6 +56,7 @@ Route::get('/all-story', 'StoryController@allStory')->name('all_story');
 
 Route::get('/{id}/delete-story', 'StoryController@deleteStory')->name('delete_story');
 
+//
 
 Route::get('/add-team', 'TeamController@addTeam')->name('add_team');
 
@@ -69,6 +70,8 @@ Route::post('/{id}/update-team', 'TeamController@updateTeam')->name('update_team
 
 Route::get('/{id}/delete-team', 'TeamController@deleteTeam')->name('delete_team');
 
+//
+
 Route::get('/add-review', 'ReviewController@addReview')->name('add_review');
 
 Route::post('/upload-review', 'ReviewController@uploadReview')->name('upload_review');
@@ -81,6 +84,18 @@ Route::post('/{id}/update-review', 'ReviewController@updateReview')->name('updat
 
 Route::get('/{id}/delete-review', 'ReviewController@deleteReview')->name('delete_review');
 
+//
 
+Route::get('/add-gallery', 'GalleryController@addGallery')->name('add_gallery');
+
+Route::post('/upload-gallery', 'GalleryController@uploadGallery')->name('upload_gallery');
+
+Route::get('/all-gallery', 'GalleryController@allGallery')->name('all_gallery');
+
+Route::get('/{id}/edit-gallery', 'GalleryController@editGallery')->name('edit_gallery');
+
+Route::post('/{id}/update-gallery', 'GalleryController@updateGallery')->name('update_gallery');
+
+Route::get('/{id}/delete-gallery', 'GalleryController@deleteGallery')->name('delete_gallery');
 
 

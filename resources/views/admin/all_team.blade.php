@@ -37,23 +37,25 @@
                                 <tbody id="customers">
                                     @foreach ($teams as $team)
                                     <tr class="btn-reveal-trigger">
-                                        <a href="#">
-                                            <div class="media d-flex align-items-center">
-                                                <div class="avatar avatar-xl mr-2">
-                                                    <div class=""><img class="rounded-circle img-fluid"
-                                                    src="/teamimage/{{$team->image}}" width="30" alt="" />
+                                        <td>
+                                            <a href="#">
+                                                <div class="media d-flex align-items-center">
+                                                    <div class="avatar avatar-xl mr-2">
+                                                        <div class=""><img class="rounded-circle img-fluid"
+                                                                src="/teamimage/{{$team->image}}" width="30" alt="" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h5 class="mb-0 fs--1">{{$team->name}}</h5>
                                                     </div>
                                                 </div>
-                                                <div class="media-body">
-                                                    <h5 class="mb-0 fs--1">{{$team->name}}</h5>
-                                                </div>
-                                            </div>
-                                        </a>
+                                            </a>
+                                        </td>
                                         <td class="py-2 pl-5">{{$team->email}}</td>
                                         <td class="py-3">{{$team->phone}}</td>
                                         <td class="py-2 pl-5">{{$team->position}}</td>
                                         <td class="py-2 pl-5">{{$team->comment}}</td>
-                                        <td class="py-2">{{$team->created_at}}</td>
+                                        <td class="py-2">{{$team->created_at->format('Y/m/d')}}</td>
                                         <td class="py-2 pl-5">{{$team->facebook}}</td>
                                         <td class="py-2 pl-5">{{$team->insta}}</td>
                                         <td class="py-2 pl-5">{{$team->twitter}}</td>
@@ -74,7 +76,8 @@
                                                         </svg></span></button>
                                                 <div class="dropdown-menu dropdown-menu-right border py-0">
                                                     <div class="py-2">
-                                                        <a class="dropdown-item" href="{{route('edit_team',$team->id)}}">Edit</a>
+                                                        <a class="dropdown-item"
+                                                            href="{{route('edit_team',$team->id)}}">Edit</a>
                                                         <a class="dropdown-item text-danger"
                                                             href="{{route('delete_team',$team->id)}}">Delete</a>
                                                     </div>
