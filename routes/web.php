@@ -117,3 +117,11 @@ Route::post('/upload-application', 'ApplicationController@uploadApplication')->n
 Route::get('/all-application', 'ApplicationController@allApplication')->name('all_application');
 
 Route::get('/{id}/delete-application', 'ApplicationController@deleteApplication')->name('delete_application');
+
+//
+
+Route::post('/upload-contact', 'ContactController@uploadContact')->name('upload_contact');
+
+Route::get('/all-contact', 'ContactController@allContact')->name('all_contact');
+
+Route::get('/{id}/delete-contact', 'ContactController@deleteContact')->name('delete_contact');

@@ -81,9 +81,9 @@
 		</div>
 		<div class="col-md-3 col-sm-6 col-xs-12">
 			<div class="counter-box">
-				<h3><span class="count" id="statistics_count-2" data-statistics_percent="550">&nbsp;</span></h3>
+				<h3><span class="count" id="statistics_count-2" data-statistics_percent="1250">&nbsp;</span></h3>
 				<i class="fa fa-coffee" aria-hidden="true"></i>
-				<p>COFFEE CUPS</p>
+				<p>Cake Baked</p>
 			</div>
 		</div>
 		<div class="col-md-3 col-sm-6 col-xs-12">
