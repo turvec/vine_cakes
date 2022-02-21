@@ -125,3 +125,37 @@ Route::post('/upload-contact', 'ContactController@uploadContact')->name('upload_
 Route::get('/all-contact', 'ContactController@allContact')->name('all_contact');
 
 Route::get('/{id}/delete-contact', 'ContactController@deleteContact')->name('delete_contact');
+
+//
+
+Route::get('/edit-tutorial', 'TutorialVideoController@editTutorial')->name('edit_tutorial');
+
+Route::post('/{id}/update-tutorial', 'TutorialVideoController@updateTutorial')->name('update_tutorial');
+
+//
+
+Route::get('/{id}/add-ingredient', 'TutorialVideoController@addIngredient')->name('add_ingredient');
+
+Route::post('/{id}/upload-ingredient', 'TutorialVideoController@uploadIngredient')->name('upload_ingredient');
+
+Route::get('/all-ingredient', 'TutorialVideoController@allIngredient')->name('all_ingredient');
+
+Route::get('/{id}/edit-ingredient', 'TutorialVideoController@editIngredient')->name('edit_ingredient');
+
+Route::post('/{id}/update-ingredient', 'TutorialVideoController@updateIngredient')->name('update_ingredient');
+
+Route::get('/{id}/delete-ingredient', 'TutorialVideoController@deleteIngredient')->name('delete_ingredient');
+
+//
+
+Route::get('/{id}/add-equipment', 'TutorialVideoController@addEquipment')->name('add_equipment');
+
+Route::post('/{id}/upload-equipment', 'TutorialVideoController@uploadEquipment')->name('upload_equipment');
+
+Route::get('/all-equipment', 'TutorialVideoController@allEquipment')->name('all_equipment');
+
+Route::get('/{id}/edit-equipment', 'TutorialVideoController@editEquipment')->name('edit_equipment');
+
+Route::post('/{id}/update-equipment', 'TutorialVideoController@updateEquipment')->name('update_equipment');
+
+Route::get('/{id}/delete-equipment', 'TutorialVideoController@deleteEquipment')->name('delete_equipment');
