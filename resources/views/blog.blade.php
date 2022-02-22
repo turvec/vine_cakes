@@ -184,56 +184,6 @@
                         </div>
                     </div>
                 </aside><!-- Tab Post /- -->
-                <aside class="widget widget-flicker">
-                    <h3 class="widget-title">From Gallery</h3>
-                    <ul>
-                        <li><a title="Flicker" href="#"><img width="63" height="63" alt="Flicker" src="images/flicker-1.jpg"></a></li>
-                        <li><a title="Flicker" href="#"><img width="63" height="63" alt="Flicker" src="images/flicker-2.jpg"></a></li>
-                        <li><a title="Flicker" href="#"><img width="63" height="63" alt="Flicker" src="images/flicker-3.jpg"></a></li>
-                        <li><a title="Flicker" href="#"><img width="63" height="63" alt="Flicker" src="images/flicker-4.jpg"></a></li>
-                        <li><a title="Flicker" href="#"><img width="63" height="63" alt="Flicker" src="images/flicker-5.jpg"></a></li>
-                        <li><a title="Flicker" href="#"><img width="63" height="63" alt="Flicker" src="images/flicker-6.jpg"></a></li>
-                        <li><a title="Flicker" href="#"><img width="63" height="63" alt="Flicker" src="images/flicker-7.jpg"></a></li>
-                        <li><a title="Flicker" href="#"><img width="63" height="63" alt="Flicker" src="images/flicker-8.jpg"></a></li>
-                    </ul>
-                </aside>
-                <aside class="widget widget-archives"><h3 class="widget-title">Archives</h3>
-                    <table class="calendar">
-                        <caption><i class="fa fa-angle-left" aria-hidden="true"></i>April 2016<i class="fa fa-angle-right" aria-hidden="true"></i><span>Tuesday 26th</span></caption>
-                        <thead>
-                            <tr>
-                                <th title="Monday" scope="col">M</th>
-                                <th title="Tuesday" scope="col">T</th>
-                                <th title="Wednesday" scope="col">W</th>
-                                <th title="Thursday" scope="col">T</th>
-                                <th title="Friday" scope="col">F</th>
-                                <th title="Saturday" scope="col">S</th>
-                                <th title="Sunday" scope="col">S</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="pad" colspan="6">&nbsp;</td><td>1</td>
-                            </tr>
-                            <tr>
-                                <td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
-                            </tr>
-                            <tr>
-                                <td>9</td><td>10</td><td>11</td><td id="today">12</td><td>13</td><td>14</td><td>15</td>
-                            </tr>
-                            <tr>
-                                <td>16</td><td>17</td><td><a href="#">18</a></td><td>19</td><td>20</td><td>21</td><td>22</td>
-                            </tr>
-                            <tr>
-                                <td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td>
-                            </tr>
-                            <tr>
-                                <td>30</td><td>31</td>
-                                <td colspan="5" class="pad">&nbsp;</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </aside><!-- Widget Archives /- -->
 
                 <aside class="widget widget-reviews">
                     <h3 class="widget-title">Customer Reviews</h3>

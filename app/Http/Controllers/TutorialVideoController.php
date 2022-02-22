@@ -112,7 +112,6 @@ class TutorialVideoController extends Controller
 
         $update = Equipment::find($id);
         $update->name = $request->name;
-        $update->measurement = $request->measurement;
         $update->save();
 
         return redirect()->route('all_equipment');

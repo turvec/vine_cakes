@@ -44,7 +44,7 @@
                                     <button type="button" class="btn btn-outline-primary btn-xs">Add ingredients needed
                                         for this tutorial here</button>
                                 </a>
-                                <a href="">
+                                <a href="{{route('add_equipment',$tutorial->id)}}">
                                     <button type="button" class="btn btn-outline-primary btn-xs">Add equipment needed
                                         for this tutorial here</button>
                                 </a>

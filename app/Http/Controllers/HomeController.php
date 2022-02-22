@@ -3,11 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Agenda;
+use App\Equipment;
 use App\Gallery;
+use App\Ingredient;
 use App\Review;
 use App\Service;
 use App\Story;
 use App\Team;
+use App\TutorialVideo;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -20,10 +23,20 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $tutorial = TutorialVideo::first();
+        $ingredients = Ingredient::all();
+        $equipments = Equipment::all();
         $story = Story::first();
         $galleries = Gallery::all();
         $reviews = Review::all();
-        return view('welcome',compact('story','galleries','reviews'));
+        return view('welcome',compact(
+            'story',
+            'galleries',
+            'reviews',
+            'tutorial',
+            'ingredients',
+            'equipments'
+        ));
     }
 
      /**

@@ -72,7 +72,7 @@
             </a>
             <ul aria-expanded="false">
                 <li><a href="{{route('edit_tutorial')}}">Update tutorial of the day</a></li>
-                <li><a href="{{route('all_ingredients')}}">View tutorial Ingredients</a></li>
+                <li><a href="{{route('all_ingredient')}}">View tutorial Ingredients</a></li>
                 <li><a href="{{route('all_equipment')}}">View tutorial Equipmeents</a></li>
             </ul>
         </li>

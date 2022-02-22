@@ -184,22 +184,22 @@
 <div class="video-section container-fluid no-padding">
 	<div class="container">
 		<div class="video-section-content">
-			<h3>Chocolate Cake Tutorial</h3>
-			<a class="popup-vimeo" href="https://vimeo.com/45830194"><i class="fa fa-play"></i></a>
-			<p>Ingredients</p>
+			<h3>Tutorial Of The Day</h3>
+			<a class="popup-vimeo" href="{{$tutorial->video_link}}"><i class="fa fa-play"></i></a>
+			<p>{{$tutorial->title}}</p>
 			<div class="video-link-list">
 				<div class="col-md-6 col-sm-6 col-xs-6 video-links">
 					<ul>
-						<li>1 cup (150g) self-raising flour, sifted  </li>
-						<li>1/3 cup (50g) cocoa, sifted</li>
-						<li>1 cup (220g) caster sugar</li>
+                        @foreach ($ingredients as $i)
+						<li> {{$i->measurement}}, {{$i->name}} </li>
+                        @endforeach
 					</ul>
 				</div>
 				<div class="col-md-6 col-sm-6 col-xs-6 video-links">
 					<ul>
-						<li>1/3 cup (80g) butter, softened</li>
-						<li>1/2 cup (125ml) milk</li>
-						<li>2 eggs, lightly beaten</li>
+                        @foreach ($equipments as $e)
+						<li> {{$e->name}} </li>
+                        @endforeach
 					</ul>
 				</div>
 			</div>
