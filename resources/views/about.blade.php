@@ -100,7 +100,7 @@
             </ol>
             <div role="listbox" class="carousel-inner">
                 @foreach ($reviews as $review)
-                <div class="item {{ $loop->first ? 'active' : '' }}">
+                <div class=" item {{ $loop->first ? 'active' : '' }}">
                     <div class="testimonial-content">
                         <p><span><i class="fa fa-quote-left"></i></span> {{$review->comment}} <span><i class="fa fa-quote-right"></i></span></p>
                         <img src="/reviewimage/{{$review->image}}" alt="testimonial" height="89" width="89" />
